@@ -25,6 +25,7 @@
 
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    line-height: 92px;
 }
 
 .font-label {
@@ -200,8 +201,8 @@ body {
 }
 
 .mainCard__header {
-    height: 100px;
-    line-height: 100px;
+    height: 92px;
+    line-height: 92px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
 }
@@ -214,10 +215,11 @@ h1 {
 
 
 .mainCard__header__hr {
-    margin: 0 -15px;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     border-top: 2px solid #ddd;
+    width: calc(100% - 60px);
 }
 
 
@@ -234,7 +236,7 @@ h1 {
 }
 
 .mainContent__wrapper{
-    margin: 30px 0;
+    margin: 30px;
 }
 
 
@@ -360,4 +362,132 @@ input[type=submit]:hover {
     bottom: 0;
     position: fixed;
     width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/*------------new styles------------*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.header__background{
+    width: 100%;
+    height: 92px;
+    display: block;
+    background-color: white;
+    border-bottom: 2px solid #cccccc;
+}
+
+.header__container {
+    max-width: 960px;
+    width: 85%;
+    margin: auto;
+}
+
+.col-block{
+    width: 40%;
+    display: block;
+    float: left;
+}
+
+.col-links{
+    width: 60%;
+    float: left;
+    display: block;
+    text-align: right;
+}
+
+.links__block {
+    line-height: 92px;
+    color: #999;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.mainContent__background{
+    width: 100%;
+    height: auto;
+}
+
+.mainContent__container {
+    background-color: white;
+    max-width: 960px;
+
+    border: 1px solid #ddd;
+    margin: 38px auto 92px;
+}
+
+
+.mainCard__header {
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    width: calc(100% - 60px);
+    margin: auto;
+}
+
+a.copyright{
+    color: white;
+}
+
+
+.nav-item{
+    margin: 0 10px;
+}
+
+
+/*-- minimal media queries --*/
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        justify-content: right;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .main__container {
+        width: 85% !important;
+    }
+
+    .block__name {
+        height: 58px;
+        width: 100%;
+        text-align: center;    
+        margin: auto;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    h1{
+        line-height: 58px;
+    }
+
+    .col-sm-12 {
+        padding: 0;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .justify-content-end{
+       justify-content: center; 
+    }
+
+    .links__block {
+        line-height: 32px;
+    }
+
 }
