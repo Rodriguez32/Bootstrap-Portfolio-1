@@ -8,7 +8,7 @@
 
 .container__mainCard {
     background-color: white;
-    padding: 0 50px 50px;
+    padding: 0px 30px 50px;
     margin: 38px auto 92px;
     border: 1px solid #dddddd;
 }
@@ -21,6 +21,10 @@
     line-height: 92px;
     padding: 0 30px;
     margin-left: -15px;
+}
+
+.container {
+    width: 85%;
 }
 
 h1 {
@@ -219,7 +223,6 @@ h1 {
     padding: 0;
     border: 0;
     border-top: 2px solid #ddd;
-    width: calc(100% - 60px);
 }
 
 
@@ -236,7 +239,8 @@ h1 {
 }
 
 .mainContent__wrapper{
-    margin: 30px;
+    margin: 30px auto;
+    width: 94%;
 }
 
 
@@ -427,7 +431,6 @@ body {
     line-height: 100px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
-    width: calc(100% - 60px);
     margin: auto;
 }
 
@@ -441,53 +444,33 @@ a.copyright{
 }
 
 
-/*-- minimal media queries --*/
+/*-- minimal media queries */
 
 @media only screen and (max-width: 768px) {
-    .nav {
-        justify-content: right;
+    .about__image {
+        float: left;
+        width: 50%;
+        height: auto;
+        padding: 0 26px 0 0;
     }
 
 }
 
 @media only screen and (max-width: 640px) {
-    .main__container {
-        width: 85% !important;
-    }
-
-    .block__name {
-        height: 58px;
+    .about__image {
+        float: left;
+        padding: 0 26px 0 0;
         width: 100%;
-        text-align: center;    
-        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
     }
 
-    .container{
-        padding: 0;
+    .image__block {
+        position: relative;
+        height: 200px;
+        width: 235px;
+        float: left;
+        margin: 0px 0 57px -12%;
     }
 
-    .row {
-        margin: 0;
-    }
-
-    h1{
-        line-height: 58px;
-    }
-
-    .col-sm-12 {
-        padding: 0;
-    }
-
-    .nav {
-        justify-content: center;
-    }
-
-    .justify-content-end{
-       justify-content: center; 
-    }
-
-    .links__block {
-        line-height: 32px;
-    }
-
-}
+} 
